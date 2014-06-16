@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>crazy</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#arrow").click(function(){
+				var text = document.getElementById("textbox").value.split("");
+				console.log(text)
+
+				var textArray = [];
+				textArray.push(text);
+				for (x = 0; x < textArray.length ; x++){
+					
+					console.log(textArray);
+				}
+			})
+		});	
+	</script>
+	<style>
+		#container {
+			width: 560px;
+			height: 750px;
+			position: relative;
+			margin: auto;
+			left: 0;
+			right: 0;
+			border: 1px solid black;
+		}
+
+		textarea {
+			position: absolute;
+			margin: auto;
+			margin-top: 100px;
+			left:0;
+			right:0;
+		}
+
+		button {
+			width: 150px;
+			height: 150px;
+			position: relative;
+			left:200px;
+			margin-top: 300px;
+			border: 1px solid red;
+		}
+		
+		button img {
+			width: 140px;
+			height: 140px;
+			position: relative;
+			right: 3px;
+			border: 1px blue solid;
+
+		}
+		#displaybox {
+			width: 558px;
+			height: 100px;
+			position: relative;
+			margin: auto;
+			margin-top: 100px;
+			left:0;
+			right: 0;
+			border: 1px black solid;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<textarea id="textbox" cols="76" rows="10"></textarea>
+		<button type="button" id="arrow"><img src="images/arrow.png"></button>
+		<div id="displaybox"></div>
+	</div>
+</body>
+</html>

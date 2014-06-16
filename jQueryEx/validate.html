@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>validate</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			//PUT DATE HERE TO CHECK
+			var date = "-1/20/2014"
+			
+
+			
+			numdate = date.charAt(3);
+			numdate1 = date.charAt(4);
+			monthdate = date.charAt(0);
+			monthdate1 = date.charAt(1);
+			yeardate = date.charAt(6);
+			yeardate1 = date.charAt(7);
+			yeardate2 = date.charAt(8);
+			yeardate3 = date.charAt(9);
+			slash = date.charAt(2);
+			slash1 = date.charAt(5);
+			var slashes = "/"
+			var totalmonthdate = monthdate + monthdate1
+			var totalnumdate = numdate + numdate1
+			var totalyeardate = yeardate + yeardate1 + yeardate2 + yeardate3
+
+			//this checks if there are slashes
+			if (slash && slash1 != slashes){
+				alert("THE DATE IS WRONG!!")
+				return
+			}
+			else {
+				console.log("right")
+			
+			}
+			//this checks month
+			
+
+			if (totalmonthdate > 12 || totalmonthdate < 1){
+				alert("WTF this date is wrong..")
+			}
+			else {
+				alert("right")
+			}
+
+			
+
+			if (totalnumdate <=31) {
+				console.log("right")
+			}
+			else {
+				alert("THE DATE IS WRONG!!")
+			}
+
+			
+
+			if (totalyeardate <=3000){
+				console.log("right")
+			
+			}
+			else {
+				alert("THE DATE IS WRONG!!")
+			}	
+		});
+
+		/*
+		make it into an array
+			}
+use indexOf to select numbers (omitting the /)
+But the sets of numbers (month, day, year) into their each array
+
+which statement? loops for number of times…2 for month and day, 4 for year
+
+USE if/else
+for month, first number has to be 0 or 1 - if this is not true, alert the user
+if the statement is true, access another if/else within the first if/else
+
+second if else will look at day, there must be two integers 0-9
+if not true - alert user
+if true - go to third if/else (place inside second if/else)
+
+third  if/else needs 4 integers 0-9 
+
+
+Nan??
+ex. 
+if {
+blah blah;
+	if{
+		*/
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

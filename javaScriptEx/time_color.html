@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>timecolor</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		confirm("WARNING: This is a strobe light. Please exit if you can't take it.");
+		
+		
+			
+		
+		$(document).ready(function startTime(){
+				var today = new Date();
+				var thour = today.getHours();
+				var tminute = today.getMinutes();
+				var tsec = today.getSeconds();
+				var tmsec = today.getMilliseconds();
+				var reload = setTimeout(function(){startTime()},100);	
+
+				var colorchange = document.getElementById("body");
+				if (tmsec % 2 == 0) {
+					colorchange.style.backgroundColor = "#FFFFFF";
+				}
+
+				else {
+					colorchange.style.backgroundColor = "#000000";
+				}
+		});	
+	</script>
+	<style>
+		#body {
+			background-color: black;
+		}
+	</style>
+</head>
+<body id="body">
+	
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Demo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(document).click(function(){
+				$("#ob1").animate({fontSize:"100px"});
+				$("#ob2").animate({left:"300px"}, 4000);
+				$("#ob3").animate({left:"1200px", bottom:"300px"}, 4000);
+				$("#ob4").animate({left:"600px"}, 4000);
+				$("#ob5").animate({bottom:"600px"}, 4000);
+				$("#ob6").animate({bottom:"700px", left:"600px", fontSize:"60px"}, 6000);
+				$("#ob7").animate({bottom:"400px"}, 4000);
+				$("#ob8").animate({bottom:"685px", left:"500px"}, 5000);
+				$("#ob10").animate({bottom:"785px", left:"1300px"}, 2000);
+				$("#ob9").animate({bottom:"685px", left:"740px"}, 10000);
+				$(document).click(function(){
+				$("#ob1").fadeOut("fast");
+				$("#ob2").fadeOut("fast");
+				$("#ob3").fadeOut("fast");
+				$("#ob4").fadeOut("fast");
+				$("#ob5").fadeOut("fast");
+				$("#ob6").fadeOut("fast");
+				$("#ob7").fadeOut("fast");
+				$("#ob8").fadeOut("fast");
+				$("#ob10").fadeOut("fast");
+				$("#ob9").fadeOut("fast");
+			});
+			});
+			
+			
+		});
+	</script>		
+	<style>
+		#ob2 {
+			position: relative;
+		}
+
+		#ob3 {
+			position: relative;
+		}
+		#ob4 {
+			border: 10px solid black;
+			width: 60px;
+			height: 60px;
+			background-color: black;
+			position: relative;
+		}
+
+		#ob5 {
+			border: 10px solid red;
+			width: 60px;
+			height: 60px;
+			border-radius: 100px;
+			background-color: red;
+			position: relative;
+		}
+		
+		#ob6 {
+			position: relative;
+		}
+		#ob7 {
+			position: relative;
+			
+		}
+		#ob8 {
+			border: 8px dotted green;
+			height: 120px;
+			width: 60px;
+			border-radius: 30px;
+			position: relative;
+		}
+		
+		#ob9 {
+			position: relative;
+		}
+		#ob10 {
+			height: 200px;
+			width: 40px;
+			border-right: 20px solid blue;
+			border-left: 20px solid blue;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="ob1">
+		<h1><b>Victor Wang</b></h1>
+	</div>
+	<div id="ob2">
+		<h2>NYCDA</h2>
+	</div>
+	<div id="ob3">
+		<h3>HTML5 CSS jQuery</h3>
+	</div>
+	<div id="ob4"></div>
+	<div id="ob5"></div>
+	<div id="ob6">
+		<p><em>BLAH BLAH BLAH BLAH</em></p>
+	</div>
+	<div id="ob7">
+		<h1><a href="http://www.apple.com" target="_blank">APPLE</a></h1>
+	</div>
+	<div id="ob8"></div>
+	<div id="ob9">
+		<img src="images/nycdalogo.png">
+	</div>
+	<div id="ob10"></div>
+</body>
+</html>

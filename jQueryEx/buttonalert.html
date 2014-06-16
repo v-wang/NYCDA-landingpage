@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>buttonalert</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var button = document.getElementById("buttonUI");
+			$(button).click(function(){
+
+			var text = document.getElementById("ui").value;
+			var name = "Victor"
+			if (text == name) {
+			alert(name);
+		}
+			});	
+		});
+
+	</script>
+</head>
+<body>
+	<div>
+		<form>
+			<textarea id="ui" rows="3" cols="30"></textarea>
+			<br>
+			<input type="button" value="SUBMIT!" id="buttonUI">
+		</form>	
+	</div>
+</body>
+</html>

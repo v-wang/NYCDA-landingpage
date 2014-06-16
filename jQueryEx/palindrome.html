@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>palindrome</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function palindrome(string){
+				rstring = string.split("").reverse().join("");
+				if (string == rstring) {
+				alert("PALINDROME!!")
+			}
+			else   
+				alert("nopppee, try again..");
+			}
+
+			// THIS IS ANOTHER WAY TO DO IT, BUT IT'S NOT A FUNCTION
+			// var pname = "civic"
+			// var rpname = pname.split("").reverse().join("");
+			
+			// if (pname == rpname) {
+			// 	alert("PALINDROME!!")
+			// }
+			// else   
+			// 	alert("nopppee, try again..");
+			palindrome("civic")
+		});
+	</script>
+
+</head>
+<body>
+	<div>
+		
+	</div>
+	
+</body>
+</html>

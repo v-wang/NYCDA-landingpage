@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shoppingcart</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var quantity;
+
+			$("#subbutt").click(function(){
+				quantity = document.getElementById("quantity").value;
+				
+			})
+
+			$("#shoppingcart").mouseenter(function(){
+				alert(quantity)
+			})
+
+		
+			
+			
+
+		});		
+	</script>
+	<style>
+		#container {
+			width: 1000px;
+			height: 700px;
+			position: relative;
+			margin: auto;
+			margin-top: 30px;
+			left: 0;
+			right: 0;
+			border: 2px black solid;
+		}
+
+		#picbox {
+			width: 400px;
+			height: 300px;
+			position: relative;
+			margin: 20px;
+			border: 1px black dashed;
+			display: inline-block;
+		}
+
+		#content {
+			width: 500px;
+			height: 300px;
+			position: relative;
+			margin: 20px;
+			float: right;
+			border: 1px red solid;
+		}
+
+		#reviews {
+			width: 800px;
+			height: 300px;
+			position: absolute;
+			margin: auto;
+			margin-top: 20px;
+			left: 0;
+			right: 0;
+			border: 2px blue solid;
+		}
+
+		form {
+			width: 100px;
+			position: relative;
+			margin: auto;
+			margin-top: 50px;
+			border: 1px black solid;
+			text-align: center;
+		}
+		
+		button {
+			width: 65px;
+			height: 65px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		button img {
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="picbox"><img src="images/uselessproduct.jpg"></div>
+		<div id="content">
+			<ol>
+				<li>product feature product feature product feature product feature</li>
+				<li>product feature product feature product feature product feature</li>
+				<li>product feature product feature product feature product feature</li>
+				<li>product feature product feature product feature product feature</li>
+			</ol>
+			<form>
+				<select id="quantity">
+					<option value="There is 1 useless product in your cart.">1</option>
+					<option value="There are 2 useless products in your cart.">2</option>
+					<option value="There are 3 useless products in your cart.">3</option>
+					<option value="There are 4 useless products in your cart.">4</option>
+					<option value="There are 500 useless products in your cart.">500</option>
+					<option value="There are 1000 useless products in your cart.">1000</option>
+				</select>
+				<input type="button" value="Add to cart!" id="subbutt">
+			</form>
+			<button type="button" id="shoppingcart" onclick="return false"><img src="images/shoppingbutt.jpg"></button>
+			<p>Select amount and then hit submit. Hovering over the cart icon should return inventory.</p>
+		</div>
+		<div id="reviews">
+			<h1>Reviews</h1>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nihil consequuntur quibusdam consequatur reprehenderit eaque vitae rerum at. Repellendus hic iste nostrum eligendi, iure explicabo sit aspernatur. Cumque, vel, voluptatem.</li>
+				<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nihil est minus voluptate nisi, quasi esse reiciendis ratione enim nostrum provident sequi fugit error quaerat, quod ipsa, fuga doloremque facere!</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis quas repudiandae eum. Modi assumenda quos rerum voluptas autem consectetur, libero maiores, eligendi blanditiis id nulla quibusdam aut, praesentium nostrum.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates temporibus, quasi aliquam, vitae non velit deserunt natus numquam asperiores voluptate, nihil totam alias magni sunt magnam ad quia facilis odit.</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

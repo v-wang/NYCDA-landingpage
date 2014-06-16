@@ -1,0 +1,50 @@
+html {
+	border:2px solid black;
+	height: 100%;
+	
+	
+}
+
+body {
+	border: 3px dashed black;
+	height: 100%;
+	
+	
+}
+
+img {
+	height: 60px;
+	width: 150px;
+	margin-bottom: 30px;
+}
+
+#name {
+	border-top: 1px solid rgba(0,0,0, .2);
+	border-bottom: 1px solid rgba(0,0,0, .2);
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+#container {
+	border: 1px solid black;
+	height: 100%;
+	width: 600px;
+	position: relative;
+	left: 150px;
+	box-shadow: 10px 10px 5px #888888;
+	
+
+}
+
+#column1 {
+	float: right;
+	width: 50%;
+	margin-top: 40px;
+
+}
+
+a {
+	margin: 25px;
+	line-height: 40px;
+	font-size: 15px;
+
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>interactivity</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var mainWidth = $("#container").width();
+			var mainHeight = $("#container").height();
+			var mainArea = mainWidth * mainHeight;
+			
+			var boxArray=[];
+			for (x=0; x <= 143; x++){
+				$("#container").append("<div class='box' id='box_"+ x + "'></div>");
+				boxArray.push('box_'+ x);	
+			}	
+			
+			$("#drinkbutt").click(function(){
+			var randomBox = boxArray[Math.floor(Math.random() * boxArray.length)];
+			$("#"+randomBox).animate({opacity:0});
+			})
+		});	
+	</script>
+	<style>
+		#everything {
+			width: 700px;
+			height: 610px;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			border: 1px red dashed;
+			display: inline-block;
+		}
+		#container {
+			width: 600px;
+			height: 600px;
+			position: relative;
+			border: 1px black solid;
+			float: right;
+
+		}
+
+		.box {
+			width: 48px;
+			height: 48px;
+			float: left;
+			background-color: black;
+			border: 1px red solid;
+		}
+		
+		button {
+			width: 70px;
+			height: 70px;
+			
+			
+
+		}
+		img {
+			width: 60px;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div id="everything">
+		<div id="container"></div>
+		<button type="button" id="drinkbutt"><img src="images/alclogo.jpg"></button>
+	</div>
+</body>
+</html>

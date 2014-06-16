@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vowels</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function vowelcheck(string) {
+				lstring = string.toLowerCase();
+				var count = 0;
+				for(var x=0; x <string.length; x++){
+					switch(lstring[x]) {
+						case "a": 
+						case "e": 
+						case "i": 
+						case "o": 
+						case "u": 
+							count++;
+						break;
+
+					}
+
+				}
+				alert("Vowels: " + count);
+			}
+				
+				vowelcheck("Victor")
+				
+		});
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>digital clock</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function startTime(){
+				var today = new Date();
+				var thour = today.getHours();
+				var tminute = today.getMinutes();
+				var tsec = today.getSeconds();
+				var tmsec = today.getMilliseconds();
+				tminute = checkTime(tminute);
+				tsec = checkTime(tsec);
+				tmsec = checkTimemil(tmsec);
+				document.getElementById("clock").innerHTML = thour + ":" + tminute + ":" + tsec + ":" + tmsec;
+				var reload = setTimeout(function(){startTime()},80);
+				
+				//adds 0 for minutes/sec
+				function checkTime(x){
+					if (x <10){x = "0" + x};
+					return x;
+				}
+				//adds 0 for milliseconds 
+				function checkTimemil(y){
+					if (y <100){y = "0" + y};
+					return y;
+				}
+		});	
+	</script>
+	<style>
+		#clock {
+			width:430px;
+			height: 90px;
+			position: relative;
+			margin: auto;
+			left:0;
+			right:0;
+			margin-top: 300px;
+			font-size: 80px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="clock"></div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cssRefsheet</title>
+	<!-- <link rel="stylesheet" href="main.css">
+	You can either link up an external css or place your styling between style tags in the head portion of the HTML. To link up to the external sheet, you have to use <link> -->
+
+	<!-- In this cssRefsheet, we will be placing the styling in the HTML between style tags -->
+
+	<style>
+		#container {
+			width: 100%;
+			height: 100%;
+		}
+
+		#blackbox {
+			width: 60px;
+			height: 60px;
+			border: 3px solid black;
+		}
+
+		.center {
+			position: relative;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+
+		.right {
+			float: right;
+		}
+
+		.left {
+			float: left;
+		}
+		
+		#greenbox {
+			width: 60px;
+			height: 60px;
+			border: 3px solid green;
+		}
+
+		.circular {
+			border-radius: 40px;
+		}
+
+		.backgroundcolor{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+	
+		<!-- Overall, what helps with styling is placing borders around all of your elements and it's parents to see how each element is interacting with eachtother. Clearly label classes and ID's. -->
+
+		<h1>CSS refsheet</h1>
+		<br> <!-- THIS IS A PAGE BREAK -->
+		<p>Comments are found in the code.  To see the full list of commands, click on the link below.</p>
+		<h3><a href="http://www.w3schools.com/cssref/css3_browsersupport.asp">Complete CSS ref</a></h3>
+		<br>
+		<h1>1</h1>
+
+		<!-- The black box below will stay on the left naturally.  If you "float" it left, the text that comes after the box will then appear next to the box.  To place objects side by side, use float and put them in the same div.  Assign the components inside the container div a width so that they can fit in the bigger container div.  The container div must also have a defined width. -->
+
+		<div id="blackbox"></div>
+		<p>This box can also be centered --> </p>
+		<p>Check out the code in Sublime</p>
+		<div id="blackbox" class="center"></div>
+		<p>Or it can go all the way to the right</p>
+		<p>Either we use float or we can change the position of the element and mess around the margins and 'left' and 'right'</p>
+		<div id="blackbox" class="right"></div>
+		<br>
+		<h1>2</h1>
+		<p>GREEN BOX!!!</p>
+		<div id="greenbox"></div>
+		<p>By changing the border radius, we can make the edges more circular</p>
+		<div id="greenbox" class="circular"></div>
+		<br>
+		<div id="greenbox" class="circular backgroundcolor"></div>
+	</div>
+	
+</body>
+</html>

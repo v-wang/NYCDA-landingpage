@@ -1,0 +1,79 @@
+body {
+	background-color: rgba(68,156,230,0.2);
+}
+
+#top {
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	height: 130px;
+	width: 960px;
+	/*border: 2px black solid;*/
+	position: relative;
+	margin: auto;
+	right: 0;
+	left: 0;
+	background-color: white;
+	border-radius:20px;
+
+}
+
+#top h2 {
+	letter-spacing: 10px;
+}
+#container {
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	width: 964px;
+	height: 100%;
+	position: relative;
+	margin: auto;
+	right: 0;
+	left: 0;
+	text-align: center;
+	/*border-top:2px solid rgb(170,170,170);*/
+	background-color: white;
+	border-radius: 20px;
+}
+
+#assignments {
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	width: 240px;
+	height: 500px;
+	border-top:;
+	/*border: 1px solid green;*/
+	border-right:1px solid rgb(170,170,170);
+	float: left;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#cheatsheets {
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	width: 240px;
+	height: 500px;
+	/*border: 1px solid green;*/
+	border-right:1px solid rgb(170,170,170);
+	float: left;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#javaScript {
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	width: 240px;
+	height: 500px;
+	/*border: 1px solid green;*/
+	border-right:1px solid rgb(170,170,170);
+	float: left;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#cont {
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+	width: 240px;
+	height: 500px;
+	/*border: 1px solid green;*/
+	float: left;
+	background-color: white;
+	border-radius: 20px;
+	
+}

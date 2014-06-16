@@ -1,0 +1,44 @@
+html {
+	border:2px solid black;
+	height: 100%;
+}
+
+body {
+	border: 3px dashed black;
+	height: 100%;
+}
+
+img {
+	height: 60px;
+	width: 150px;
+	margin-bottom: 30px;
+}
+
+#name {
+	border-top: 1px solid rgba(0,0,0, .2);
+	border-bottom: 1px solid rgba(0,0,0, .2);
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+
+#container {
+	border: 1px solid black;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#column1 {
+	float: right;
+	width: 50%;
+	margin-top: 40px;
+}
+
+a {
+	line-height: 30px;
+	font-size: 15px;
+	padding-right: 5px;
+	position: relative;
+	left:10px;
+
+}

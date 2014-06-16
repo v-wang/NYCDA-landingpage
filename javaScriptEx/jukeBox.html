@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			function Record(song, artist){
+				this.song = song;
+				this.artist = artist;
+			}
+			var track1 = new Record("Love In Motion", "Skrillex")
+			var track2 = new Record("Crossroads", "Bone Thugs")
+			var track3 = new Record("Like Home", "Nicky Romero & Nervo")
+
+			function jukeBox(track) {
+				this.track = "track";
+				alert(track)
+			}
+			tsong1 = track1.song + " by " + track1.artist
+			tsong2 = track2.song + " by " + track2.artist
+			tsong3 = track3.song + " by " + track3.artist
+
+
+			jukeBox(tsong3)
+
+		});	
+			
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

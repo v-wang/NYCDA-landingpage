@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>methpropJava</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			function Animal (type, gender, color){
+				
+				this.type = type;
+				this.gender = gender;
+				this.color = color;
+			}	
+
+			var Animals = Animal
+			var corgi = new Animal("dog", "male", "black");
+			var german_shepherd = new Animal("dog", "female", "mixed");
+			var rando_dog = new Animal("dog", "unknown", "white");
+			var animal_array = [corgi, german_shepherd, rando_dog];
+			
+			
+			
+
+			for(x=0; x < animal_array.length; x++)
+			
+			console.log(animal_array[x])
+		
+			// Another way - class example
+			// var getKeys = function(obj){a
+			// 	var keys = [];
+			// 	for(var key in obj){
+			// 		keys.push(key)
+			// 	}
+			// 	return keys;
+			// }
+
+
+
+			//THIS WORKS, just need to figure out how to also print the name of the variable - its only showing properties 
+		});	
+	</script>
+</head>
+<body>
+	<p>animal constructor</p>
+</body>
+</html>
